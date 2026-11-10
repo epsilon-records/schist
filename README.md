@@ -6,7 +6,7 @@ Part of **[Epsilon Audio](https://github.com/natehouk/epsilon-plugins)**, a fami
 
 ![Schist](screenshot.png)
 
-Schist is a multiband dynamics processor with a per-band detection range. It was written from scratch; no third-party code, presets or artwork are included.
+Schist is a multiband dynamics processor with a per-band detection range. It was written from scratch: the DSP, interface and presets are original work, and third-party components (such as the DPF framework) are listed under [License](#license).
 
 It is part of a family of plugins:
 - [Monolith](https://github.com/natehouk/monolith) (synth)
