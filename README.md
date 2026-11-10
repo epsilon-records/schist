@@ -6,7 +6,7 @@ Part of **[Epsilon Audio](https://github.com/natehouk/epsilon-plugins)**, a fami
 
 ![Schist](screenshot.png)
 
-Schist is a clean-room design with the feature set of FabFilter Pro-MB, FabFilter's thirteenth plugin (October 2013). It was written from scratch, working only from FabFilter's public release announcement and contemporary reviews. No FabFilter code, binaries, presets, artwork or trademarks were used.
+Schist is a multiband dynamics processor with a per-band detection range. It was written from scratch; no third-party code, presets or artwork are included.
 
 It is part of a family of plugins:
 - [Monolith](https://github.com/natehouk/monolith) (synth)
@@ -105,27 +105,7 @@ xattr -dr com.apple.quarantine ~/Library/Audio/Plug-Ins/*/Schist*
 
 ![A band at Inf:1: limiting](screenshot-limiter.png)
 
-### Compared with FabFilter Pro-MB (2013)
-
-| Pro-MB | Schist |
-|---|---|
-| Up to six freely placed bands; snap together into a crossover | ✓ plus shelf bands at either end |
-| Dynamic Phase, Linear Phase and Minimum Phase modes | ✓ |
-| Compression and expansion, downward and upward | ✓ |
-| Limiting (compress, fast attack) and gating (expand, high ratio and range) | ✓ Inf:1 ratio; tested to hold within 1 dB of the threshold and to gate the full range |
-| Threshold, range, ratio, knee, attack, release, output gain, stereo link per band | ✓ |
-| Lookahead up to 20 ms | ✓ per band (fixed 20 ms latency when used) |
-| Intelligent program- and frequency-dependent timing | ✓ |
-| Expert mode: mid/side, external sidechain, custom detection range per band | ✓ |
-| Crossover slopes 6–48 dB/oct | ✓ per band (minimum phase uses 6/12/24/36/48) |
-| Up to 4× linear-phase oversampling | ✓ in dynamic and minimum phase |
-| Interactive display with gain-change curves; pre/post analyzer with freeze | ✓ plus per-band meter and transfer curve |
-| Mix 0–200%, output level and pan | ✓ |
-| Solo and bypass per band | ✓ |
-| MIDI Learn, undo/redo, A/B, smoothed parameters, help | ✓ hover tips, help pages and full manual |
-| Factory presets | 41 factory presets plus user presets |
-| Stereo and mono versions | Stereo |
-| Pro Tools (RTAS/AAX/AudioSuite) | Not supported (needs Avid's SDK and signing) |
+Not supported: Pro Tools (AAX/AudioSuite).
 
 ## Build from source
 
@@ -190,5 +170,3 @@ Release checks:
 ## License
 
 [MIT](LICENSE). Built with [DPF](https://github.com/DISTRHO/DPF) and its bundled NanoVG, which are under the ISC license. `plugins/Schist/ResizeHandle.hpp` comes from DPF's examples and keeps its ISC notice.
-
-"FabFilter" and "FabFilter Pro-MB" are trademarks of FabFilter Software Instruments. Schist is not affiliated with or endorsed by FabFilter.
